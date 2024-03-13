@@ -7,12 +7,12 @@ services:
       - 4500:4500
     environment:
       - SERVER_NAME=test-server # Server name
+      - NATION=FIN # Host nationality
       - PUBLIC=no # List game to public hostlist
       - PUBLIC_WEB=no # Show game in public hostlist web page (game must also be public)
-      - NATION=FIN # Host nationality
       # - REC_MAIL=CHANGEME # Network records account e-mail (trusted host)
-      # - REC_PASSW=CHANGEME # Network records password (trusted host)
+      # - REC_PASSWD=CHANGEME # Network records password (trusted host)
 
     volumes:
       - ./cfg/autohost.ini:/etc/pp2host/static/autohost.ini
-      - ./static:/etc/pp2host/static # Use this mount if you want keep your playlogs and etc.
+      # - ./static:/etc/pp2host/static # Use this mount if you want keep your playlogs and etc.
