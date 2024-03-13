@@ -4,10 +4,10 @@
 # The important undocumented -start -argument
 ARGS="-start"
 
-if [ "$PUBLIC" = "no" ]; then
+if [[ "$PUBLIC" = "no" ]] || [[ -z "$PUBLIC" ]]; then
 ARGS="$ARGS -nopublic"
 fi
-if [ "$PUBLIC_WEB" = "no" ]; then
+if [[ "$PUBLIC_WEB" = "no" ]] || [[ -z "$PUBLIC_WEB" ]]; then
 ARGS="$ARGS -hideweb"
 fi
 
