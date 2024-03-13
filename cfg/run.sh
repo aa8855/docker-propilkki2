@@ -18,9 +18,9 @@ ${ARGS} \
 -pid "/var/run/pilkki.pid" \
 -port "${NETWORK_PORT}" \
 -playername "${PLAYER_NAME}" \
+-playernation "${PLAYER_NATION}" \
 -recmail "${REC_MAIL}" \
 -recpassword "${REC_PASSWORD}" \
--hello "${HELLO}" \
 -pathdata "/usr/share/pp2host" \
 -pathsettings "/etc/pp2host/static" \
 -pathlogs "/etc/pp2host/static" \
