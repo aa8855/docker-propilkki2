@@ -16,6 +16,7 @@ COPY cfg/run.sh /etc/pp2host/run.sh
 EXPOSE 4500
 
 RUN chown pilkki:pilkki -R /etc/pp2host/*
+RUN ["chmod", "+x", "/etc/pp2host/run.sh"]
 USER pilkki
 ENTRYPOINT /etc/pp2host/run.sh
 
