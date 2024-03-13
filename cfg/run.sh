@@ -1,4 +1,3 @@
-#!/bin/bash
 # read ini file into variables
 . /etc/pp2host/pp2host.conf
 
