@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    image: 'pp2host:latest'
+    restart: unless-stopped
+    ports:
+      - 4500:4500
+
+    volumes:
+      - ./cfg/autohost.ini:/etc/pp2host/static/autohost.ini
