@@ -1,0 +1,13 @@
+version: "3"
+services:
+  pilkki:
+    build:
+      context: .
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - 4500:4500
+    
+    volumes:
+      - ./cfg/autohost.ini:/etc/pp2host/static/autohost.ini
+      # - ./static:/etc/pp2host/static # Use this mount if you want keep your playlogs and etc.
