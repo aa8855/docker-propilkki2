@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install -y wget gnupg procps curl
 
 RUN curl -sS http://procyon.ddns.net:8080/propilkki_pub.gpg.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/propilkki.gpg
-RUN echo "deb [signed-by=/etc/apt/trusted.gpg.d/propilkki.gpg] http://procyon.ddns.net:8080/repos/apt/debian stretch main" | tee tee /etc/apt/sources.list.d/propilkki.list
+RUN echo "deb [signed-by=/etc/apt/trusted.gpg.d/propilkki.gpg] http://procyon.ddns.net:8080/repos/apt/debian bookworm main" | tee tee /etc/apt/sources.list.d/propilkki.list
 RUN apt-get update
 RUN apt-get install pp2host
 
